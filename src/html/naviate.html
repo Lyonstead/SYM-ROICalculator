@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Symetri</title>
+</head>
+<body>
+  <header>
+    <a href="https://Symetri.ie">
+        <img class="logo" src="../../assets/images/Symetri-Logo.png" width="240" height="72" alt="Symetri Logo">
+    </a>
+  </header>
+  
+  <div class="content">
+    <h1>ROI Calculator</h1>
+    <p>A tool by Symetri to calculate the potential gains acheived with Naviate for Revit.</p>
+    <input type="number" id="users" placeholder="Users"><br>
+    <input type="number" id="hours" placeholder="Work Week (Hours)" value="40"><br>
+    <input type="number" id="revit" placeholder="Revit (%)"> <br>
+    <input type="number" id="wage" placeholder="Wage (Hourly)"> <br>
+    <button id="switch" onclick="changeDisplay()">Switch</button><br>
+    <input type="number" id="singleInput" placeholder="Increase (%)">
+    <div id="selection" style="display:none;">
+      <input type="checkbox" id="rebar">
+      <label for="rebar">Rebar</label>
+      <input type="checkbox" id="accelerate">
+      <label for="accelerate">Accelerate</label>
+      <input type="checkbox" id="architecture">
+      <label for="architecture">Architecture</label>
+      <input type="checkbox" id="structure">
+      <label for="structure">Structure</label>
+      <input type="checkbox" id="siteandlandscaping">
+      <label for="siteandlandscaping">Site & Landscaping</label>
+      <input type="checkbox" id="landuse">
+      <label for="landuse">Landuse</label>
+      <input type="checkbox" id="daylight">
+      <label for="daylight">Daylight</label>
+      <input type="checkbox" id="hvacandplumbing">
+      <label for="hvacandplumbing">HVAC & Plumbing</label>
+      <input type="checkbox" id="electrical">
+      <label for="electrical">Electrical</label>
+      <input type="checkbox" id="fabrication">
+      <label for="fabrication">Fabrication</label>
+      <input type="checkbox" id="mep">
+      <label for="mep">MEP</label>
+      <input type="checkbox" id="rebarextension">
+      <label for="rebarextension">Rebar Extension</label>
+    </div><br>
+    <button id="submit" onclick="getUserInput()">Submit</button><br>
+    <h3>Per Year</h3>
+    <p id="savings"></p> 
+    <p id="savingsHours"></p> 
+  </div>
+</body>
+<link rel="stylesheet" href="../stylesheets/style.css">
+<script src="../scripts/naviate.js"></script>
+</html>
